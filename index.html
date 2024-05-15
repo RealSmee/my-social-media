@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" id="myElement">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+    <!--navbar-->
+    <nav>
+     
+      <div class="nav-content">
+        <h3 data-aos="zoom-in" id="nav-title"></h3>
+        <div class="div">
+        <button class="btn"><i class="fas fa-moon "></i> <!-- Sun icon --></button>
+         <button onclick="toggleLanguage()" class="btn"> <i class="fas fa-language"></i>
+         </button></div>
+      </div> 
+      <div class="squ1"></div>
+      <div class="squ2"></div>
+
+      <!--hero-->
+    <div class="hero-container" data-aos="zoom-in">
+      <div class="hero-content" >
+        <img src="photo.png" class="img"/>
+  <h3 id="hero-name" ></h3>
+  <h5 id="hero-job"></h5>
+      </div>
+    </div>
+    </nav>
+
+    <!--main-->
+
+    <div class="main-content ">
+     
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="cube"></div>
+       <div class="cube"></div>
+   
+      <div class="card-container">
+        <a href="https://t.me/source_code_xui">
+        <div class="card" data-aos="fade-down-right">
+          <h5 id="tel">Telegram </h5>
+         <i class="fab fa-telegram"></i>
+          
+        </div></a>
+        <a href="https://linkedin.com/in/atefeh-ameri75">
+        <div class="card" data-aos="fade-down-left">
+          <h5 id="lin">LinkedIn</h5>
+          <i class="fab fa-linkedin"></i>
+        </div></a>
+        <a href="https://github.com/Atefeh-Amerii?tab=repositories">
+        <div class="card" data-aos="fade-down-right">
+          <h5 id="git">GitHub</h5>
+          <i class="fab fa-github"></i>
+        </div></a>
+        <a href="github.com/Atefeh-Amerii?tab=repositories">
+        <div class="card" data-aos="fade-down-left">
+            <h5 id="insta">Instagram</h5>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+          <a href="mailto:amerii.atefeh@gmail.com">
+          <div class="card" data-aos="fade-down-left">
+            <h5 id="email"></h5>
+            <i class="fas fa-envelope"></i>
+          </div></a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p id="dev">Develope by Ati</p>
+      <p id="date"></p>
+    </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 900, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+
+      });
+      
+   
+    </script>
+    <script src="linkholder.js"></script>
+  </body>
+</html>
